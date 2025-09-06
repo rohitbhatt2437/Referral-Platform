@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { jwtDecode } from 'jwt-decode'; // Import the decoder
 
-const API_URL = 'http://localhost:5000/api/auth/';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/auth/`;
 
 // Helper function to handle successful authentication
 const handleAuthSuccess = (token) => {
